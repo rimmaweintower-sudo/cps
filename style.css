@@ -52,14 +52,14 @@ body {
   background-color: #41f6d7;
   border-radius: 0 4px 4px 0;
 }
-@media (min-width: 1120px) {
+@media (min-width: 1366px) {
   .page-title {
     order: 1;
     padding-left: 32px;
   }
 }
 
-@media (min-width: 1120px) {
+@media (min-width: 1366px) {
   .wrap {
     margin-top: 42px;
     display: flex;
@@ -833,7 +833,7 @@ button {
 .header__icon--call, .header__icon--chat, .header__icon--profile, .header__divider-1 {
   display: none;
 }
-@media (min-width: 768px) and (max-width: 1119px) {
+@media (min-width: 768px) and (max-width: 1365px) {
   .header__left-container {
     display: flex;
     flex-wrap: nowrap;
@@ -861,7 +861,7 @@ button {
     display: flex;
   }
 }
-@media (min-width: 1120px) {
+@media (min-width: 1366px) {
   .header__icon {
     display: none;
   }
@@ -885,7 +885,7 @@ button {
 .icon-box__status {
   display: none;
 }
-@media (min-width: 1120px) {
+@media (min-width: 1366px) {
   .icon-box__request,
   .icon-box__status {
     display: flex;
@@ -905,10 +905,15 @@ button {
   margin-top: 24px;
   position: relative;
 }
+@media (min-width: 1366px) {
+  .nav-wrapper {
+    height: 82px;
+  }
+}
 .nav__item--hidden {
   display: none;
 }
-@media (min-width: 1120px) {
+@media (min-width: 1366px) {
   .nav__item--hidden {
     display: flex;
   }
@@ -922,7 +927,7 @@ button {
   width: 50px;
   background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%);
 }
-@media (min-width: 1120px) {
+@media (min-width: 1366px) {
   .nav-wrapper::after {
     display: none;
   }
