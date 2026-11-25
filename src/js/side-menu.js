@@ -23,16 +23,16 @@ if (closeBtn && sideMenu) {
 }
 overlay.addEventListener('click', closeMenu)
 // боковое
-let menuItems = document.querySelectorAll('.side-menu__el')
+let menuItems = document.querySelectorAll('.fixed-menu__el')
 
 menuItems.forEach(function (item) {
   item.addEventListener('click', function (evt) {
     evt.preventDefault()
     menuItems.forEach(function (el) {
-      el.classList.remove('side-menu__el--active')
+      el.classList.remove('fixed-menu__el--active')
     })
 
-    item.classList.add('side-menu__el--active')
+    item.classList.add('fixed-menu__el--active')
   })
 })
 
