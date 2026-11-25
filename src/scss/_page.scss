@@ -29,7 +29,7 @@ body {
     border-radius: 0 4px 4px 0;
   }
 
-  @media (min-width: 1120px) {
+  @media (min-width: 1366px) {
     & {
       order: 1;
       padding-left: 32px;
@@ -37,7 +37,7 @@ body {
   }
 }
 .wrap {
-  @media (min-width: 1120px) {
+  @media (min-width: 1366px) {
     margin-top: 42px;
     display: flex;
     box-sizing: border-box;
