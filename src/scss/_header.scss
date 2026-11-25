@@ -1,0 +1,123 @@
+.header {
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 24px 16px;
+  border-bottom: 1px solid $border-mint;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $bg-white;
+
+  &__left-container,
+  &__right-container {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__divider,
+  &__divider-1 {
+    width: 2px;
+    height: 32px;
+    background-color: #eaeaea;
+    margin: 0;
+  }
+
+  &__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+
+  &__icon--logo {
+    min-height: 50.81px;
+    min-width: 96.55px;
+    background-color: $bg-white;
+  }
+
+  &__icon-pic {
+    height: 20px;
+    width: 20px;
+  }
+
+  &__icon--call,
+  &__icon--chat,
+  &__icon--profile,
+  &__divider-1 {
+    display: none;
+  }
+  @media (min-width: 768px) and (max-width: 1119px) {
+    &__left-container {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 16px;
+    }
+
+    &__icon--burger {
+      order: 1;
+    }
+
+    &__divider {
+      order: 2;
+    }
+
+    &__icon--logo {
+      order: 3;
+    }
+
+    &__right-container {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 16px;
+    }
+
+    &__icon--call,
+    &__icon--chat,
+    &__icon--profile,
+    &__divider-1 {
+      display: flex;
+    }
+  }
+  @media (min-width: 1120px) {
+    &__icon {
+      display: none;
+    }
+
+    &__icon--settings,
+    &__icon--search,
+    &__icon-box {
+      display: flex;
+    }
+
+    &__icon-box {
+      align-items: center;
+      gap: 8px;
+    }
+
+    & {
+      border: none;
+      background-color: $bg-main;
+    }
+    &__right-container {
+      order: 2;
+    }
+  }
+}
+
+.icon-box__request,
+.icon-box__status {
+  display: none;
+
+  @media (min-width: 1120px) {
+    display: flex;
+  }
+}

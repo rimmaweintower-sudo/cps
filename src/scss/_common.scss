@@ -1,0 +1,162 @@
+/* шаблончики */
+
+/*1. развертыши*/
+.expanded {
+  max-height: 700px !important;
+}
+/*2. модалки*/
+.is-open {
+  display: flex !important;
+  flex-direction: column;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 320px;
+  height: 100%;
+  box-shadow: -20px 0 20px 0 #454f7e20;
+  padding-left: 24px;
+  z-index: 20;
+  background-color: $bg-white;
+  @media (min-width: 768px) {
+    flex-direction: column;
+  }
+  @media (min-width: 1366px) {
+    width: 440px;
+    padding: 40px 32px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+/* правила */
+input,
+textarea,
+button {
+  font-family: inherit;
+}
+
+/*кнопки */
+.pink-btn {
+  height: 40px;
+  width: 40px;
+  min-width: 40px;
+  min-height: 40px;
+  padding: 0;
+  border: none;
+  background-color: $accent-pink;
+  border-radius: 50%;
+  align-items: center;
+  display: flex;
+  &:hover {
+    opacity: 0.85;
+  }
+}
+.close-btn {
+  position: relative;
+  transition:
+    opacity 0.2 ease,
+    transform 0.2 ease;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    width: 22px;
+    height: 2px;
+    background-color: $bg-white;
+    left: 25%;
+  }
+  &::before {
+    transform: rotate(45deg);
+  }
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+.long-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  padding-left: 15px;
+  font-family: inherit;
+  font-size: 12px;
+  letter-spacing: -0.15px;
+  line-height: 16px;
+  font-weight: 700;
+  background-color: $accent-pink;
+  color: $bg-white;
+  width: 119px;
+  height: 32px;
+  border: none;
+  border-radius: 16px;
+  text-transform: uppercase;
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: 16px;
+    width: 6px;
+    height: 6px;
+    border-right: 2px solid $bg-white;
+    border-bottom: 2px solid $bg-white;
+    transform: rotate(-45deg);
+  }
+}
+.expand-button {
+  display: none;
+  @media (min-width: 768px) {
+    & {
+      height: 24px;
+      margin: 15px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      border: none;
+      background-color: $bg-main;
+    }
+    &--opened > &__icon {
+      transform: rotate(180deg);
+    }
+    &__icon {
+      height: 24px;
+    }
+    &__text {
+      font-family: inherit;
+      font-family: TTLakes-Regular, sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    &--opened > &__icon {
+      transform: rotate(180deg);
+    }
+  }
+  @media (min-width: 1120px) {
+    .expand-button {
+      background-color: $bg-main;
+    }
+  }
+}
+.swiper-slide__arrow {
+  display: inline-block;
+  position: relative;
+  height: 40px;
+  width: 40px;
+  border: 2px solid #ff3e79;
+  border-radius: 50%;
+
+  flex-shrink: 0;
+  &::after {
+    content: '';
+    width: 8.5px;
+    height: 8.5px;
+    position: absolute;
+    border-right: 2px solid #ff3e79;
+    border-bottom: 2px solid #ff3e79;
+    left: 0;
+    top: 0;
+    transform: translate(125%, 140%) rotate(-45deg);
+  }
+  &:hover {
+    opacity: 0.8;
+  }
+}
