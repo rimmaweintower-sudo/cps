@@ -703,7 +703,7 @@ button {
 .brands div.swiper {
   -webkit-mask-image: linear-gradient(to right, black 95%, transparent 100%);
           mask-image: linear-gradient(to right, black 95%, transparent 100%);
-  padding-bottom: 4px;
+  padding-bottom: 0;
   margin-bottom: 10px;
 }
 @media (min-width: 768px) {
@@ -720,12 +720,9 @@ button {
   display: flex;
   flex-direction: row;
   box-sizing: border-box;
-  padding: 0 20px 16px 16px;
   position: relative;
-  margin: 0;
-  margin-bottom: 0px;
-  margin-left: 0px;
-  margin-top: 16px;
+  margin: 16px 20px 10px 16px;
+  padding: 0;
 }
 @media (min-width: 768px) {
   .brands ul.swiper-wrapper {
@@ -1142,9 +1139,8 @@ button {
   }
 }
 .devices .devices-swiper ul.swiper-wrapper {
-  margin-left: 0;
-  padding-left: 16px;
-  margin-bottom: 10px;
+  margin: 16px 20px 10px 16px;
+  padding: 0;
 }
 @media (min-width: 768px) {
   .devices .devices-swiper ul.swiper-wrapper {
@@ -1238,7 +1234,8 @@ button {
 }
 .prices ul.swiper-wrapper {
   max-width: 100%;
-  padding: 16px;
+  margin: 16px 20px 10px 16px;
+  padding: 0;
 }
 @media (min-width: 768px) {
   .prices ul.swiper-wrapper {
