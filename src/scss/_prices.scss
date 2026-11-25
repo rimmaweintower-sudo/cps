@@ -27,7 +27,8 @@
   }
   ul.swiper-wrapper {
     max-width: 100%;
-    padding: 16px;
+    margin: 16px 20px 10px 16px;
+    padding: 0;
 
     @media (min-width: 768px) {
       display: flex;
