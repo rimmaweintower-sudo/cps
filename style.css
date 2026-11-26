@@ -721,7 +721,7 @@ button {
   flex-direction: row;
   box-sizing: border-box;
   position: relative;
-  margin: 16px 20px 10px 16px;
+  margin: 16px;
   padding: 0;
 }
 @media (min-width: 768px) {
@@ -732,8 +732,8 @@ button {
     -moz-column-gap: 24px;
          column-gap: 24px;
     row-gap: 16px;
-    padding: 0 24px 0 24px;
-    margin-bottom: 24px;
+    margin: 24px;
+    padding: 0;
   }
 }
 @media (min-width: 1120px) {
@@ -743,7 +743,8 @@ button {
     grid-template-columns: repeat(4, 1fr);
     -moz-column-gap: 32px;
          column-gap: 32px;
-    padding-left: 22px;
+    margin: 24px 32px;
+    padding: 0;
   }
 }
 .brands .swiper-slide {
@@ -897,9 +898,6 @@ button {
   display: block;
   height: 50px;
   position: relative;
-  overflow-x: auto;
-  white-space: nowrap;
-  scrollbar-width: none;
 }
 .nav-wrapper {
   margin-top: 24px;
@@ -937,11 +935,16 @@ button {
   padding-left: 16px;
   height: 40px;
   display: flex;
+  row-gap: 16px;
   flex-wrap: nowrap;
+  white-space: nowrap;
+  scrollbar-width: none;
+  overflow-y: clip;
+  overflow-x: scroll;
   list-style: none;
   align-items: center;
 }
-@media (min-width: 1120px) {
+@media (min-width: 1366px) {
   .nav__list {
     display: flex;
     box-sizing: border-box;
@@ -952,6 +955,7 @@ button {
 }
 .nav__item {
   padding: 8px 16px;
+  border: 1px solid transparent;
 }
 @media (min-width: 1120px) {
   .nav__item {
@@ -1138,13 +1142,12 @@ button {
     box-sizing: border-box;
     padding: 0;
     margin-bottom: 15px;
-    padding-right: 20px;
-    max-height: 180px;
+    max-height: 190px;
     overflow: hidden;
   }
 }
 .devices .devices-swiper ul.swiper-wrapper {
-  margin: 16px 20px 10px 16px;
+  margin: 16px;
   padding: 0;
 }
 @media (min-width: 768px) {
@@ -1152,20 +1155,22 @@ button {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
-    -moz-column-gap: 14px;
-         column-gap: 14px;
+    -moz-column-gap: 24px;
+         column-gap: 24px;
     row-gap: 16px;
-    margin-right: auto;
-    margin-left: 0;
+    margin: 24px;
+    padding: 0;
   }
 }
-@media (min-width: 1120px) {
+@media (min-width: 1366px) {
   .devices .devices-swiper ul.swiper-wrapper {
     box-sizing: border-box;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     -moz-column-gap: 32px;
          column-gap: 32px;
+    margin: 24px 32px;
+    padding: 0;
   }
 }
 .devices .devices-swiper ul.swiper-wrapper .devices-slide {
@@ -1239,7 +1244,7 @@ button {
 }
 .prices ul.swiper-wrapper {
   max-width: 100%;
-  margin: 16px 20px 10px 16px;
+  margin: 16px;
   padding: 0;
 }
 @media (min-width: 768px) {
@@ -1248,10 +1253,8 @@ button {
     flex-direction: column;
     background-color: white;
     border-radius: 6px;
-    margin-right: 24px;
-    margin-left: 24px;
+    margin: 24px;
     padding: 0;
-    margin-bottom: 24px;
   }
 }
 .prices-card.swiper-slide {
