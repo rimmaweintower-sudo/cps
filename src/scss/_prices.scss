@@ -27,18 +27,15 @@
   }
   ul.swiper-wrapper {
     max-width: 100%;
-    margin: 16px 20px 10px 16px;
+    margin: 16px;
     padding: 0;
-
     @media (min-width: 768px) {
       display: flex;
       flex-direction: column;
       background-color: $bg-white;
       border-radius: 6px;
-      margin-right: 24px;
-      margin-left: 24px;
+      margin: 24px;
       padding: 0;
-      margin-bottom: 24px;
     }
   }
   &-card.swiper-slide {

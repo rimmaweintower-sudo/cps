@@ -3,9 +3,7 @@
   display: block;
   height: 50px;
   position: relative;
-  overflow-x: auto;
-  white-space: nowrap;
-  scrollbar-width: none;
+
   &-wrapper {
     margin-top: 24px;
     position: relative;
@@ -43,11 +41,16 @@
     padding-left: 16px;
     height: 40px;
     display: flex;
+    row-gap: 16px;
     flex-wrap: nowrap;
+    white-space: nowrap;
+    scrollbar-width: none;
+    overflow-y: clip;
+    overflow-x: scroll;
     list-style: none;
     align-items: center;
 
-    @media (min-width: 1120px) {
+    @media (min-width: 1366px) {
       display: flex;
       box-sizing: border-box;
       height: auto;
@@ -58,6 +61,7 @@
 
   &__item {
     padding: 8px 16px;
+    border: 1px solid transparent;
     @media (min-width: 1120px) {
       padding: 8px 22px;
     }

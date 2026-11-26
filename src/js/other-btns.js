@@ -103,6 +103,12 @@ let showModal = function (modalBtn, modalWindow, modalClose) {
     btnC.addEventListener('click', closeModal)
   })
   overlay.addEventListener('click', closeModal)
+
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape' && modal.classList.contains('is-open')) {
+      closeModal()
+    }
+  })
 }
 
 showModal('.modal-call-btn', '.modal-call', '.modal-call__close-btn')

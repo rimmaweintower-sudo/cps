@@ -9,31 +9,32 @@
       box-sizing: border-box;
       padding: 0;
       margin-bottom: 15px;
-      padding-right: 20px;
-      max-height: 180px;
+      max-height: 190px;
       overflow: hidden;
     }
   }
   ul.swiper-wrapper {
-    margin: 16px 20px 10px 16px;
+    margin: 16px;
     padding: 0;
     @media (min-width: 768px) {
       & {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         justify-content: space-between;
-        column-gap: 14px;
+        column-gap: 24px;
         row-gap: 16px;
-        margin-right: auto;
-        margin-left: 0;
+        margin: 24px;
+        padding: 0;
       }
     }
-    @media (min-width: 1120px) {
+    @media (min-width: 1366px) {
       & {
         box-sizing: border-box;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         column-gap: 32px;
+        margin: 24px 32px;
+        padding: 0;
       }
     }
     .devices-slide {

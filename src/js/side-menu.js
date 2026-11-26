@@ -21,6 +21,16 @@ if (burgerBtn && sideMenu) {
 if (closeBtn && sideMenu) {
   closeBtn.addEventListener('click', closeMenu)
 }
+// esc
+document.addEventListener('keydown', function (event) {
+  if (
+    event.key === 'Escape' &&
+    sideMenu.classList.contains('fixed-menu--open')
+  ) {
+    closeMenu()
+  }
+})
+
 overlay.addEventListener('click', closeMenu)
 // боковое
 let menuItems = document.querySelectorAll('.fixed-menu__el')
